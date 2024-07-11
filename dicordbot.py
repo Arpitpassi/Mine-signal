@@ -3,7 +3,7 @@ import requests
 import os
 
 TOKEN = os.environ.get("TOKEN")
-ESP8266_IP = '192.168.177.49'
+ESP8266_IP = os.environ.get("ESP8266_IP")
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
